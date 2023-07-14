@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
             float lightLevel = event.values[0];
             lightLevelTextView.setText("Nivel de Iluminación: " + lightLevel);
 
-            if (lightLevel < 8) {
+            if (lightLevel < 15) {
                 // Bajos niveles de iluminación
                 try {
                     cameraManager.setTorchMode(cameraId, true); // Enciende el flash
